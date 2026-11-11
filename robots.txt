@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://my-project-4dsx9q6w5-khadijah3.vercel.app/sitemap.xml
