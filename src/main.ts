@@ -123,12 +123,11 @@ const themeStorageKey = "khadija-portfolio-theme";
 const root = document.documentElement;
 const themeToggle = getElement<HTMLButtonElement>("#theme-toggle");
 const themeIcon = getElement<SVGElement>("#theme-icon");
-const projectGrid = getElement<HTMLDivElement>("#project-grid");
-const projectEmpty = getElement<HTMLParagraphElement>("#project-empty");
+const projectGrid = document.querySelector<HTMLDivElement>("#project-grid");
+const projectEmpty = document.querySelector<HTMLParagraphElement>("#project-empty");
 const filterButtons = document.querySelectorAll<HTMLButtonElement>("[data-filter]");
-const serviceGrid = getElement<HTMLDivElement>("#service-grid");
-const contactForm = getElement<HTMLFormElement>("#contact-form");
-const formStatus = getElement<HTMLParagraphElement>("#form-status");
+const serviceGrid = document.querySelector<HTMLDivElement>("#service-grid");
+const contactForm = document.querySelector<HTMLFormElement>("#contact-form");
 const menuToggle = getElement<HTMLButtonElement>("#menu-toggle");
 const primaryMenu = getElement<HTMLDivElement>("#primary-menu");
 
@@ -210,12 +209,20 @@ function createProjectCard(project: Project): HTMLElement {
 }
 
 function renderProjects(category: ProjectCategory = "all"): void {
+  if (!projectGrid || !projectEmpty) {
+    return;
+  }
+
   const filteredProjects = category === "all" ? projects : projects.filter((project) => project.category === category);
   projectGrid.replaceChildren(...filteredProjects.map(createProjectCard));
   projectEmpty.classList.toggle("hidden", filteredProjects.length > 0);
 }
 
 function renderServices(): void {
+  if (!serviceGrid) {
+    return;
+  }
+
   const cards = services.map((service) => {
     const article = document.createElement("article");
     article.className = "service-card";
@@ -340,6 +347,11 @@ function validateContact(data: ContactFormData, emailInput: HTMLInputElement): C
 }
 
 function initializeContactForm(): void {
+  if (!contactForm) {
+    return;
+  }
+
+  const formStatus = getElement<HTMLParagraphElement>("#form-status");
   const nameInput = getElement<HTMLInputElement>("#contact-name");
   const emailInput = getElement<HTMLInputElement>("#contact-email");
   const messageInput = getElement<HTMLTextAreaElement>("#contact-message");

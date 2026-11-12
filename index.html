@@ -3,598 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- التحقق من ملكية الموقع في Google Search Console -->
-    <meta
-      name="google-site-verification"
-      content="Y-FN0w_ULcx3T3keARnfl8MPLfC0Hj1hSyeYxPXYvMg"
-    />
-
-    <!-- العنوان والوصف الأساسي لمحركات البحث -->
-    <title>خديجة | مطوّرة واجهات ومصممة تجارب ويب عربية</title>
-    <meta
-      name="description"
-      content="خديجة — مطوّرة واجهات ومصممة رقمية. أساعدك على تحويل أفكارك إلى مواقع وتجارب ويب عربية عصرية، سريعة، ومتجاوبة مع جميع الشاشات."
-    />
-    <meta
-      name="keywords"
-      content="خديجة, تطوير واجهات, تصميم مواقع, Front-End Developer, مواقع عربية, برمجة ويب"
-    />
-    <meta name="author" content="خديجة" />
-    <meta name="robots" content="index, follow" />
-
-    <!-- الرابط الأساسي للموقع على Vercel -->
-    <link
-      rel="canonical"
-      href="https://my-project-4dsx9q6w5-khadijah3.vercel.app/"
-    />
-
-    <!-- وسوم Open Graph لتحسين شكل الرابط عند المشاركة في منصات التواصل -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="خديجة | مطوّرة واجهات ومصممة تجارب ويب عربية"
-    />
-    <meta
-      property="og:description"
-      content="أساعدك على تحويل أفكارك إلى مواقع وتجارب ويب عربية عصرية، سريعة، ومتجاوبة."
-    />
-    <meta
-      property="og:url"
-      content="https://my-project-4dsx9q6w5-khadijah3.vercel.app/"
-    />
-    <meta property="og:locale" content="ar_AR" />
-
-    <!-- إعدادات المظهر والخطوط -->
+    <meta name="google-site-verification" content="Y-FN0w_ULcx3T3keARnfl8MPLfC0Hj1hSyeYxPXYvMg" />
+    <meta name="description" content="خديجة، مطوّرة واجهات ومصممة رقمية. اكتشفي نبذة عني وأعمالي وخدماتي وتواصلي معي." />
     <meta name="theme-color" content="#f8fafc" />
+    <link rel="canonical" href="https://my-project-4dsx9q6w5-khadijah3.vercel.app/" />
+    <title>خديجة | مطوّرة واجهات ومصممة تجارب ويب عربية</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = { darkMode: "class" };
-    </script>
+    <script>tailwind.config = { darkMode: "class" };</script>
   </head>
-  <body
-    class="bg-slate-50 text-slate-800 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100"
-  >
-    <header
-      class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-950/90"
-    >
-      <nav
-        class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8"
-        aria-label="التنقل الرئيسي"
-      >
-        <a
-          class="flex items-center gap-3 font-extrabold tracking-tight"
-          href="index.html"
-          aria-label="خديجة، الصفحة الرئيسية"
-        >
-          <span
-            class="grid size-11 place-items-center rounded-2xl bg-indigo-600 text-lg text-white shadow-lg shadow-indigo-600/20"
-            >خ</span
-          >
-          <span class="text-xl"
-            >خديجة<span class="text-indigo-600">.</span></span
-          >
+  <body class="bg-slate-50 text-slate-800 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
+    <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-950/90">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="التنقل الرئيسي">
+        <a class="flex items-center gap-3 font-extrabold tracking-tight" href="index.html" aria-label="خديجة، الصفحة الرئيسية">
+          <span class="grid size-11 place-items-center rounded-2xl bg-indigo-600 text-lg text-white shadow-lg shadow-indigo-600/20">خ</span>
+          <span class="text-xl">خديجة<span class="text-indigo-600">.</span></span>
         </a>
-        <div
-          id="primary-menu"
-          class="nav-menu hidden items-center gap-8 text-sm font-semibold text-slate-600 dark:text-slate-300 md:flex"
-        >
-          <a class="hover:text-indigo-600" href="#about">نبذة عني</a>
-          <a class="hover:text-indigo-600" href="#projects">أعمالي</a>
-          <a class="hover:text-indigo-600" href="#services">خدماتي</a>
-          <a class="hover:text-indigo-600" href="#faq">الأسئلة الشائعة</a>
-          <a
-            class="rounded-full bg-indigo-600 px-5 py-2.5 text-white shadow-md shadow-indigo-600/20 transition hover:bg-indigo-700"
-            href="#contact"
-            >لنتحدث</a
-          >
+        <div id="primary-menu" class="nav-menu hidden items-center gap-8 text-sm font-semibold text-slate-600 dark:text-slate-300 md:flex">
+          <a class="hover:text-indigo-600" href="index.html" aria-current="page">الرئيسية</a>
+          <a class="hover:text-indigo-600" href="about.html">نبذة عني</a>
+          <a class="hover:text-indigo-600" href="projects.html">أعمالي</a>
+          <a class="hover:text-indigo-600" href="services.html">خدماتي</a>
+          <a class="hover:text-indigo-600" href="faq.html">الأسئلة الشائعة</a>
+          <a class="rounded-full bg-indigo-600 px-5 py-2.5 text-white shadow-md shadow-indigo-600/20 transition hover:bg-indigo-700" href="contact.html">لنتحدث</a>
         </div>
         <div class="flex items-center gap-2">
-          <button
-            id="theme-toggle"
-            class="grid size-11 place-items-center rounded-full border border-slate-200 text-slate-600 transition hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-700 dark:text-slate-200"
-            type="button"
-            aria-label="تفعيل الوضع الداكن"
-            title="تبديل الوضع"
-          >
-            <svg
-              id="theme-icon"
-              class="size-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-              aria-hidden="true"
-            ></svg>
+          <button id="theme-toggle" class="grid size-11 place-items-center rounded-full border border-slate-200 text-slate-600 transition hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-700 dark:text-slate-200" type="button" aria-label="تفعيل الوضع الداكن" title="تبديل الوضع">
+            <svg id="theme-icon" class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"></svg>
           </button>
-          <button
-            id="menu-toggle"
-            class="grid size-11 place-items-center rounded-full border border-slate-200 text-slate-700 dark:border-slate-700 dark:text-slate-100 md:hidden"
-            type="button"
-            aria-label="فتح القائمة"
-            aria-expanded="false"
-            aria-controls="primary-menu"
-          >
-            <svg
-              class="size-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              aria-hidden="true"
-            >
-              <path d="M4 7h16M4 12h16M4 17h16" />
-            </svg>
+          <button id="menu-toggle" class="grid size-11 place-items-center rounded-full border border-slate-200 text-slate-700 dark:border-slate-700 dark:text-slate-100 md:hidden" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="primary-menu">
+            <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
           </button>
         </div>
       </nav>
     </header>
-
     <main>
-      <section id="about" class="relative isolate overflow-hidden">
-        <div
-          class="hero-glow pointer-events-none absolute inset-0 -z-10"
-          aria-hidden="true"
-        ></div>
-        <div
-          class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:py-28 lg:grid-cols-[1.15fr_.85fr] lg:px-8 lg:py-32"
-        >
+      <section class="relative isolate overflow-hidden">
+        <div class="hero-glow pointer-events-none absolute inset-0 -z-10" aria-hidden="true"></div>
+        <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:py-28 lg:grid-cols-[1.15fr_.85fr] lg:px-8 lg:py-32">
           <div>
-            <p
-              class="mb-6 inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-white/80 px-4 py-2 text-sm font-bold text-indigo-700 shadow-sm dark:border-indigo-900 dark:bg-slate-900 dark:text-indigo-300"
-            >
-              <span class="relative flex size-2"
-                ><span
-                  class="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-75"
-                ></span
-                ><span
-                  class="relative inline-flex size-2 rounded-full bg-emerald-500"
-                ></span
-              ></span>
+            <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-white/80 px-4 py-2 text-sm font-bold text-indigo-700 shadow-sm dark:border-indigo-900 dark:bg-slate-900 dark:text-indigo-300">
+              <span class="relative flex size-2"><span class="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex size-2 rounded-full bg-emerald-500"></span></span>
               متاحة لمشاريع جديدة
             </p>
-            <h1
-              class="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight text-slate-950 dark:text-white sm:text-5xl lg:text-6xl"
-            >
-              أصنع تجارب رقمية<br />تُشبه
-              <span class="text-gradient">فكرتك تمامًا.</span>
-            </h1>
-            <p
-              class="mt-6 max-w-2xl text-lg leading-9 text-slate-600 dark:text-slate-300"
-            >
-              أنا خديجة، مطوّرة واجهات ومصممة رقمية. أساعد العلامات والأفراد على
-              بناء مواقع عربية أنيقة، سهلة الاستخدام، وتعمل بسلاسة على كل
-              الأجهزة.
-            </p>
+            <h1 class="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight text-slate-950 dark:text-white sm:text-5xl lg:text-6xl">أصنع تجارب رقمية<br />تُشبه <span class="text-gradient">فكرتك تمامًا.</span></h1>
+            <p class="mt-6 max-w-2xl text-lg leading-9 text-slate-600 dark:text-slate-300">أنا خديجة، مطوّرة واجهات ومصممة رقمية. أساعد العلامات والأفراد على بناء مواقع عربية أنيقة، سهلة الاستخدام، وتعمل بسلاسة على كل الأجهزة.</p>
             <div class="mt-9 flex flex-wrap gap-4">
-              <a
-                href="#projects"
-                class="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-7 py-3.5 font-bold text-white shadow-xl shadow-indigo-600/20 transition hover:-translate-y-0.5 hover:bg-indigo-700"
-              >
-                شاهدي أعمالي <span aria-hidden="true">←</span>
-              </a>
-              <a
-                href="#contact"
-                class="rounded-full border border-slate-300 bg-white/70 px-7 py-3.5 font-bold text-slate-700 transition hover:border-indigo-300 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
-              >
-                تواصلي معي
-              </a>
-            </div>
-            <div
-              class="mt-12 flex flex-wrap gap-x-10 gap-y-5 border-t border-slate-200 pt-7 dark:border-slate-800"
-            >
-              <div>
-                <p
-                  class="text-2xl font-extrabold text-slate-950 dark:text-white"
-                >
-                  ٣+
-                </p>
-                <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">
-                  سنوات من الإبداع
-                </p>
-              </div>
-              <div>
-                <p
-                  class="text-2xl font-extrabold text-slate-950 dark:text-white"
-                >
-                  ٢٤
-                </p>
-                <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">
-                  مشروعًا منجزًا
-                </p>
-              </div>
-              <div>
-                <p
-                  class="text-2xl font-extrabold text-slate-950 dark:text-white"
-                >
-                  ١٠٠٪
-                </p>
-                <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">
-                  اهتمام بالتفاصيل
-                </p>
-              </div>
+              <a href="projects.html" class="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-7 py-3.5 font-bold text-white shadow-xl shadow-indigo-600/20 transition hover:-translate-y-0.5 hover:bg-indigo-700">شاهدي أعمالي <span aria-hidden="true">←</span></a>
+              <a href="contact.html" class="rounded-full border border-slate-300 bg-white/70 px-7 py-3.5 font-bold text-slate-700 transition hover:border-indigo-300 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200">تواصلي معي</a>
             </div>
           </div>
           <div class="relative mx-auto w-full max-w-md">
-            <div
-              class="absolute -inset-5 rounded-[2.5rem] bg-gradient-to-br from-indigo-400/30 via-fuchsia-300/20 to-cyan-300/30 blur-2xl"
-              aria-hidden="true"
-            ></div>
-            <div
-              class="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white p-3 shadow-2xl shadow-indigo-900/10 dark:border-slate-700 dark:bg-slate-900"
-            >
-              <img
-                class="aspect-[4/4.5] w-full rounded-[1.5rem] object-cover object-center"
-                src="./imgs/landing-image.png"
-                alt="رسم إبداعي يعبّر عن تصميم وتطوير الواجهات الرقمية"
-              />
-              <div
-                class="absolute bottom-7 right-7 left-7 rounded-2xl border border-white/60 bg-white/90 p-4 shadow-lg backdrop-blur dark:border-slate-700 dark:bg-slate-900/90"
-              >
-                <p class="text-sm font-bold text-slate-900 dark:text-white">
-                  من الفكرة إلى الإطلاق
-                </p>
-                <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">
-                  تصميم مدروس، وتجربة تبقى في الذاكرة.
-                </p>
+            <div class="absolute -inset-5 rounded-[2.5rem] bg-gradient-to-br from-indigo-400/30 via-fuchsia-300/20 to-cyan-300/30 blur-2xl" aria-hidden="true"></div>
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white p-3 shadow-2xl shadow-indigo-900/10 dark:border-slate-700 dark:bg-slate-900">
+              <img class="aspect-[4/4.5] w-full rounded-[1.5rem] object-cover object-center" src="./imgs/landing-image.png" alt="رسم إبداعي يعبّر عن تصميم وتطوير الواجهات الرقمية" />
+              <div class="absolute bottom-7 right-7 left-7 rounded-2xl border border-white/60 bg-white/90 p-4 shadow-lg backdrop-blur dark:border-slate-700 dark:bg-slate-900/90">
+                <p class="text-sm font-bold text-slate-900 dark:text-white">من الفكرة إلى الإطلاق</p>
+                <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">تصميم مدروس، وتجربة تبقى في الذاكرة.</p>
               </div>
             </div>
-            <div
-              class="absolute -right-5 top-12 hidden rounded-2xl border border-slate-100 bg-white p-4 shadow-xl dark:border-slate-700 dark:bg-slate-900 sm:block"
-            >
-              <span class="text-2xl" aria-hidden="true">✦</span>
-              <p class="mt-1 text-xs font-bold">تفاصيل تصنع الفرق</p>
-            </div>
           </div>
         </div>
       </section>
-
-      <section id="projects" class="scroll-mt-24 py-20 sm:py-24">
-        <div class="mx-auto max-w-7xl px-5 lg:px-8">
-          <div
-            class="flex flex-col justify-between gap-6 sm:flex-row sm:items-end"
-          >
-            <div>
-              <p
-                class="text-sm font-extrabold uppercase tracking-widest text-indigo-600"
-              >
-                معرض الأعمال
-              </p>
-              <h2
-                class="mt-3 text-3xl font-extrabold text-slate-950 dark:text-white sm:text-4xl"
-              >
-                مشاريع مختارة
-              </h2>
-              <p
-                class="mt-3 max-w-xl leading-8 text-slate-600 dark:text-slate-400"
-              >
-                نماذج من تجارب رقمية صممتها بعناية لتجمع بين الجمال والوضوح
-                وسهولة الاستخدام.
-              </p>
-            </div>
-            <div
-              id="project-filters"
-              class="flex flex-wrap gap-2"
-              role="group"
-              aria-label="تصفية المشاريع"
-            >
-              <button
-                class="filter-button is-active"
-                type="button"
-                data-filter="all"
-                aria-pressed="true"
-              >
-                الكل
-              </button>
-              <button
-                class="filter-button"
-                type="button"
-                data-filter="web"
-                aria-pressed="false"
-              >
-                مواقع
-              </button>
-              <button
-                class="filter-button"
-                type="button"
-                data-filter="design"
-                aria-pressed="false"
-              >
-                تصميم
-              </button>
-              <button
-                class="filter-button"
-                type="button"
-                data-filter="content"
-                aria-pressed="false"
-              >
-                محتوى
-              </button>
-            </div>
-          </div>
-          <div
-            id="project-grid"
-            class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
-            aria-live="polite"
-          ></div>
-          <p
-            id="project-empty"
-            class="mt-8 hidden text-center text-slate-500"
-            role="status"
-          >
-            لا توجد مشاريع ضمن هذا التصنيف حاليًا.
-          </p>
-        </div>
-      </section>
-
-      <section
-        id="services"
-        class="scroll-mt-24 bg-white py-20 dark:bg-slate-900/60 sm:py-24"
-      >
+      <section class="bg-white py-16 dark:bg-slate-900/60 sm:py-20" aria-labelledby="explore-title">
         <div class="mx-auto max-w-7xl px-5 lg:px-8">
           <div class="mx-auto max-w-2xl text-center">
-            <p
-              class="text-sm font-extrabold uppercase tracking-widest text-indigo-600"
-            >
-              كيف أساعدك؟
-            </p>
-            <h2
-              class="mt-3 text-3xl font-extrabold text-slate-950 dark:text-white sm:text-4xl"
-            >
-              خدمات مصممة لاحتياجك
-            </h2>
-            <p class="mt-4 leading-8 text-slate-600 dark:text-slate-400">
-              من أول تصور وحتى إطلاق موقعك، أرافقك في كل خطوة بتواصل واضح
-              واهتمام بالتفاصيل.
-            </p>
+            <p class="text-sm font-extrabold uppercase tracking-widest text-indigo-600">تصفحي الموقع</p>
+            <h2 id="explore-title" class="mt-3 text-3xl font-extrabold text-slate-950 dark:text-white sm:text-4xl">كل ما تحتاجين معرفته</h2>
+            <p class="mt-4 leading-8 text-slate-600 dark:text-slate-400">انتقلي مباشرة إلى الصفحة التي تهمك، وستجدين روابط واضحة للصفحات الأخرى في كل مكان.</p>
           </div>
-          <div id="service-grid" class="mt-12 grid gap-5 md:grid-cols-3"></div>
-        </div>
-      </section>
-
-      <section id="faq" class="scroll-mt-24 py-20 sm:py-24">
-        <div
-          class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.8fr_1.2fr] lg:px-8"
-        >
-          <div>
-            <p
-              class="text-sm font-extrabold uppercase tracking-widest text-indigo-600"
-            >
-              إجابات واضحة
-            </p>
-            <h2
-              class="mt-3 text-3xl font-extrabold text-slate-950 dark:text-white sm:text-4xl"
-            >
-              أسئلة تتكرر
-            </h2>
-            <p class="mt-4 leading-8 text-slate-600 dark:text-slate-400">
-              هل لديك سؤال آخر؟ أرسلي تفاصيله وسأعود إليك في أقرب وقت.
-            </p>
-            <a
-              class="mt-6 inline-flex font-bold text-indigo-600 hover:text-indigo-700"
-              href="#contact"
-              >اسألي خديجة <span class="mr-2" aria-hidden="true">←</span></a
-            >
+          <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <a class="service-card group" href="about.html"><span class="grid size-12 place-items-center rounded-2xl bg-indigo-50 text-xl font-extrabold text-indigo-600 dark:bg-indigo-950 dark:text-indigo-300" aria-hidden="true">خ</span><h3 class="mt-5 text-lg font-extrabold text-slate-950 group-hover:text-indigo-600 dark:text-white">نبذة عني</h3><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">تعرّفي على خبرتي وطريقة عملي.</p><span class="mt-4 inline-block font-bold text-indigo-600">اقرئي المزيد ←</span></a>
+            <a class="service-card group" href="projects.html"><span class="grid size-12 place-items-center rounded-2xl bg-indigo-50 text-xl font-extrabold text-indigo-600 dark:bg-indigo-950 dark:text-indigo-300" aria-hidden="true">✦</span><h3 class="mt-5 text-lg font-extrabold text-slate-950 group-hover:text-indigo-600 dark:text-white">أعمالي</h3><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">شاهدي نماذج من المشاريع والتجارب الرقمية.</p><span class="mt-4 inline-block font-bold text-indigo-600">استكشفي الأعمال ←</span></a>
+            <a class="service-card group" href="services.html"><span class="grid size-12 place-items-center rounded-2xl bg-indigo-50 text-xl font-extrabold text-indigo-600 dark:bg-indigo-950 dark:text-indigo-300" aria-hidden="true">⌘</span><h3 class="mt-5 text-lg font-extrabold text-slate-950 group-hover:text-indigo-600 dark:text-white">خدماتي</h3><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">اكتشفي كيف يمكنني مساعدتك في مشروعك.</p><span class="mt-4 inline-block font-bold text-indigo-600">تصفحي الخدمات ←</span></a>
+            <a class="service-card group" href="faq.html"><span class="grid size-12 place-items-center rounded-2xl bg-indigo-50 text-xl font-extrabold text-indigo-600 dark:bg-indigo-950 dark:text-indigo-300" aria-hidden="true">؟</span><h3 class="mt-5 text-lg font-extrabold text-slate-950 group-hover:text-indigo-600 dark:text-white">الأسئلة الشائعة</h3><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">إجابات سريعة عن تنفيذ المشاريع والتعاون.</p><span class="mt-4 inline-block font-bold text-indigo-600">اعرفي الإجابات ←</span></a>
+            <a class="service-card group" href="contact.html"><span class="grid size-12 place-items-center rounded-2xl bg-indigo-50 text-xl font-extrabold text-indigo-600 dark:bg-indigo-950 dark:text-indigo-300" aria-hidden="true">✉</span><h3 class="mt-5 text-lg font-extrabold text-slate-950 group-hover:text-indigo-600 dark:text-white">تواصلي معي</h3><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">شاركي تفاصيل فكرتك لنبدأ الحديث.</p><span class="mt-4 inline-block font-bold text-indigo-600">ابدئي التواصل ←</span></a>
           </div>
-          <div id="faq-list" class="space-y-3">
-            <article class="faq-item">
-              <h3>
-                <button
-                  class="faq-question"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="faq-answer-1"
-                >
-                  كم يستغرق تنفيذ الموقع؟<span
-                    class="faq-plus"
-                    aria-hidden="true"
-                    >+</span
-                  >
-                </button>
-              </h3>
-              <div id="faq-answer-1" class="faq-answer" aria-hidden="true">
-                <div>
-                  <p>
-                    تختلف المدة حسب حجم المشروع ومتطلباته. بعد فهم نطاق العمل،
-                    أشاركك جدولًا زمنيًا واضحًا ومراحل التنفيذ قبل البدء.
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article class="faq-item">
-              <h3>
-                <button
-                  class="faq-question"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="faq-answer-2"
-                >
-                  هل تصممين مواقع متوافقة مع الجوال؟<span
-                    class="faq-plus"
-                    aria-hidden="true"
-                    >+</span
-                  >
-                </button>
-              </h3>
-              <div id="faq-answer-2" class="faq-answer" aria-hidden="true">
-                <div>
-                  <p>
-                    نعم، أصمم وأطوّر الواجهات لتعمل بسلاسة على الجوال والأجهزة
-                    اللوحية والحواسيب، مع مراعاة اتجاه الكتابة العربية من اليمين
-                    إلى اليسار.
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article class="faq-item">
-              <h3>
-                <button
-                  class="faq-question"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="faq-answer-3"
-                >
-                  هل يمكنني طلب تعديلات بعد التسليم؟<span
-                    class="faq-plus"
-                    aria-hidden="true"
-                    >+</span
-                  >
-                </button>
-              </h3>
-              <div id="faq-answer-3" class="faq-answer" aria-hidden="true">
-                <div>
-                  <p>
-                    بالتأكيد. نتفق مسبقًا على جولات المراجعة المطلوبة، وأحرص على
-                    تسليم عمل يلبي أهدافك ويعكس هوية مشروعك.
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article class="faq-item">
-              <h3>
-                <button
-                  class="faq-question"
-                  type="button"
-                  aria-expanded="false"
-                  aria-controls="faq-answer-4"
-                >
-                  كيف أبدأ بطلب مشروع؟<span class="faq-plus" aria-hidden="true"
-                    >+</span
-                  >
-                </button>
-              </h3>
-              <div id="faq-answer-4" class="faq-answer" aria-hidden="true">
-                <div>
-                  <p>
-                    املئي نموذج التواصل بفكرة المشروع وأهدافه، وسأراجع التفاصيل
-                    معك لتحديد الخطوات التالية والتصور الأنسب.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="contact"
-        class="scroll-mt-24 bg-slate-900 py-20 text-white dark:bg-black sm:py-24"
-      >
-        <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-2 lg:px-8">
-          <div class="self-center">
-            <p
-              class="text-sm font-extrabold uppercase tracking-widest text-indigo-300"
-            >
-              لديك فكرة؟
-            </p>
-            <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">
-              لنجعلها واقعًا رقميًا.
-            </h2>
-            <p class="mt-5 max-w-lg leading-8 text-slate-300">
-              شاركني نبذة عن مشروعك وما تطمحين إلى تحقيقه، وسأرد عليك لمناقشة
-              الخطوة المناسبة.
-            </p>
-            <div class="mt-8 flex items-center gap-3 text-slate-300">
-              <span
-                class="grid size-11 place-items-center rounded-full bg-white/10"
-                aria-hidden="true"
-                >✉</span
-              ><span>نموذج التواصل متاح على مدار الساعة</span>
-            </div>
-          </div>
-          <form
-            id="contact-form"
-            class="rounded-3xl border border-white/10 bg-white p-6 text-slate-800 shadow-2xl sm:p-8 dark:bg-slate-900 dark:text-slate-100"
-            novalidate
-          >
-            <div class="grid gap-5 sm:grid-cols-2">
-              <label class="form-label"
-                >الاسم
-                <input
-                  class="form-input"
-                  id="contact-name"
-                  name="name"
-                  type="text"
-                  autocomplete="name"
-                  required
-                  minlength="2"
-                  maxlength="80"
-                  placeholder="اسمك الكريم"
-                />
-                <span class="field-error" id="name-error"></span>
-              </label>
-              <label class="form-label"
-                >البريد الإلكتروني
-                <input
-                  class="form-input"
-                  id="contact-email"
-                  name="email"
-                  type="email"
-                  autocomplete="email"
-                  required
-                  maxlength="160"
-                  placeholder="name@example.com"
-                  dir="ltr"
-                />
-                <span class="field-error" id="email-error"></span>
-              </label>
-              <label class="form-label sm:col-span-2"
-                >كيف يمكنني مساعدتك؟
-                <textarea
-                  class="form-input min-h-32 resize-y"
-                  id="contact-message"
-                  name="message"
-                  required
-                  minlength="10"
-                  maxlength="2000"
-                  placeholder="اكتبي نبذة عن مشروعك..."
-                ></textarea>
-                <span class="field-error" id="message-error"></span>
-              </label>
-            </div>
-            <button
-              class="mt-5 w-full rounded-xl bg-indigo-600 px-6 py-3.5 font-extrabold text-white transition hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-300"
-              type="submit"
-            >
-              إرسال الرسالة
-            </button>
-            <p
-              id="form-status"
-              class="mt-4 min-h-6 text-sm"
-              role="status"
-              aria-live="polite"
-            ></p>
-            <p
-              class="mt-2 text-xs leading-6 text-slate-500 dark:text-slate-400"
-            >
-              هذا نموذج تجريبي للتحقق من البيانات وعرض التأكيد؛ لا يرسل الرسالة
-              إلى خادم حتى يتم ربطه بخدمة إرسال.
-            </p>
-          </form>
         </div>
       </section>
     </main>
-
-    <footer
-      class="border-t border-slate-200 bg-white py-7 dark:border-slate-800 dark:bg-slate-950"
-    >
-      <div
-        class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 text-sm text-slate-500 sm:flex-row lg:px-8 dark:text-slate-400"
-      >
-        <a
-          class="font-extrabold text-slate-800 dark:text-white"
-          href="index.html"
-          >خديجة<span class="text-indigo-600">.</span></a
-        >
+    <footer class="border-t border-slate-200 bg-white py-7 dark:border-slate-800 dark:bg-slate-950">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 text-sm text-slate-500 sm:flex-row lg:px-8 dark:text-slate-400">
+        <a class="font-extrabold text-slate-800 dark:text-white" href="index.html">خديجة<span class="text-indigo-600">.</span></a>
         <p>© <span id="current-year"></span> خديجة. صُنع بعناية وإبداع.</p>
-        <a class="hover:text-indigo-600" href="#about">العودة إلى الأعلى ↑</a>
+        <a class="hover:text-indigo-600" href="about.html">نبذة عني</a>
       </div>
     </footer>
     <script type="module" src="./dist/main.js"></script>

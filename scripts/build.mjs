@@ -9,6 +9,11 @@ await mkdir(outputDirectory, { recursive: true });
 
 for (const file of [
   "index.html",
+  "about.html",
+  "projects.html",
+  "services.html",
+  "faq.html",
+  "contact.html",
   "styles.css",
   "google85ba2df064ad68e3.html",
   "sitemap.xml",

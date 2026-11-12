@@ -90,12 +90,11 @@ const themeStorageKey = "khadija-portfolio-theme";
 const root = document.documentElement;
 const themeToggle = getElement("#theme-toggle");
 const themeIcon = getElement("#theme-icon");
-const projectGrid = getElement("#project-grid");
-const projectEmpty = getElement("#project-empty");
+const projectGrid = document.querySelector("#project-grid");
+const projectEmpty = document.querySelector("#project-empty");
 const filterButtons = document.querySelectorAll("[data-filter]");
-const serviceGrid = getElement("#service-grid");
-const contactForm = getElement("#contact-form");
-const formStatus = getElement("#form-status");
+const serviceGrid = document.querySelector("#service-grid");
+const contactForm = document.querySelector("#contact-form");
 const menuToggle = getElement("#menu-toggle");
 const primaryMenu = getElement("#primary-menu");
 function getElement(selector) {
@@ -166,11 +165,17 @@ function createProjectCard(project) {
     return article;
 }
 function renderProjects(category = "all") {
+    if (!projectGrid || !projectEmpty) {
+        return;
+    }
     const filteredProjects = category === "all" ? projects : projects.filter((project) => project.category === category);
     projectGrid.replaceChildren(...filteredProjects.map(createProjectCard));
     projectEmpty.classList.toggle("hidden", filteredProjects.length > 0);
 }
 function renderServices() {
+    if (!serviceGrid) {
+        return;
+    }
     const cards = services.map((service) => {
         const article = document.createElement("article");
         article.className = "service-card";
@@ -279,6 +284,10 @@ function validateContact(data, emailInput) {
     return errors;
 }
 function initializeContactForm() {
+    if (!contactForm) {
+        return;
+    }
+    const formStatus = getElement("#form-status");
     const nameInput = getElement("#contact-name");
     const emailInput = getElement("#contact-email");
     const messageInput = getElement("#contact-message");
