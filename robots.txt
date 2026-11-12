@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://myproject-ifpx4499z-khadijah3.vercel.app/sitemap.xml
+Sitemap: https://myproject-dusky-xi.vercel.app/sitemap.xml
