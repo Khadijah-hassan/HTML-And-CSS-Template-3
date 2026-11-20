@@ -6,87 +6,93 @@ var ThemeMode;
 })(ThemeMode || (ThemeMode = {}));
 const projects = [
     {
-        id: "portfolio",
-        title: "مساحة إبداعية",
-        description: "موقع تعريفي أنيق يقدّم هوية شخصية وأعمالًا مختارة بتجربة تصفح سلسة.",
-        category: "web",
-        categoryLabel: "تطوير مواقع",
-        image: "./imgs/cat-01.jpg",
-        imageAlt: "واجهة موقع تعريفي أنيقة لمبدعة رقمية",
-        tags: ["تصميم متجاوب", "واجهة عربية"],
-    },
-    {
-        id: "brand",
-        title: "هوية علامة ناشئة",
-        description: "نظام بصري متكامل يمنح مشروعًا ناشئًا حضورًا واضحًا ومتناسقًا.",
-        category: "design",
-        categoryLabel: "تصميم واجهات",
-        image: "./imgs/features-01.jpg",
-        imageAlt: "لوحة إلهام لتصميم هوية بصرية متناسقة",
-        tags: ["هوية بصرية", "نظام تصميم"],
-    },
-    {
-        id: "journal",
-        title: "دفتر الحكايات",
-        description: "منصة محتوى عربية تجمع المقالات والقصص في مساحة قراءة مريحة.",
+        id: "self-kindness",
+        title: "التخلص من جلد الذات",
+        description: "قالب مقال تثقيفي عن فهم الناقد الداخلي وبناء علاقة أرحم مع الذات؛ سيُكتب المحتوى لاحقًا.",
         category: "content",
-        categoryLabel: "محتوى رقمي",
-        image: "./imgs/cat-03.jpg",
-        imageAlt: "غلاف موضوع قصصي ضمن منصة محتوى عربية",
-        tags: ["تحرير محتوى", "تجربة قراءة"],
+        categoryLabel: "مقال تثقيفي",
+        image: "./imgs/wellbeing-illustration.svg",
+        imageAlt: "رسم نباتي هادئ يرمز إلى الرفق بالذات",
+        tags: ["الرفق بالذات", "وعي نفسي"],
+        href: "./article.html",
     },
     {
-        id: "shop",
-        title: "متجر بتجربة أسهل",
-        description: "تصميم رحلة شراء واضحة تساعد الزائر على اكتشاف المنتجات والوصول إليها.",
-        category: "web",
-        categoryLabel: "تطوير مواقع",
-        image: "./imgs/cat-05.jpg",
-        imageAlt: "تصميم بصري لواجهة متجر إلكتروني حديث",
-        tags: ["تجربة مستخدم", "توافق جوال"],
-    },
-    {
-        id: "dashboard",
-        title: "لوحة بيانات مبسطة",
-        description: "عرض معلومات مهمّة بأسلوب بصري منظم يسهل فهمه واتخاذ القرار.",
+        id: "perfectionism",
+        title: "ورشة التخفف من الكمالية",
+        description: "ورشة تثقيفية وتمارين انعكاسية لمراجعة معايير الكمال والتدرّب على أهداف واقعية.",
         category: "design",
-        categoryLabel: "تصميم واجهات",
-        image: "./imgs/features-02.jpg",
-        imageAlt: "تصميم واجهة مبسطة لعرض البيانات",
-        tags: ["تصميم واجهات", "وضوح بصري"],
+        categoryLabel: "ورشة عمل",
+        image: "./imgs/wellbeing-illustration.svg",
+        imageAlt: "رسم نباتي هادئ يرمز إلى النمو التدريجي",
+        tags: ["الكمالية", "خطوات عملية"],
+        href: "./services.html",
     },
     {
-        id: "editorial",
-        title: "محتوى يعبّر عنك",
-        description: "صياغة صفحات تعريفية ونصوص رقمية واضحة تعكس شخصية المشروع.",
-        category: "content",
-        categoryLabel: "محتوى رقمي",
-        image: "./imgs/cat-07.jpg",
-        imageAlt: "صورة توضيحية لمقال رقمي ضمن مشروع تحريري",
-        tags: ["كتابة إبداعية", "هوية صوتية"],
+        id: "self-esteem",
+        title: "برنامج بناء تقدير الذات",
+        description: "مسار تطوير ذاتي يركز على الوعي بالاحتياجات والحدود ونقاط القوة.",
+        category: "web",
+        categoryLabel: "برنامج تطوير ذاتي",
+        image: "./imgs/wellbeing-illustration.svg",
+        imageAlt: "رسم نباتي هادئ يرمز إلى تقدير الذات",
+        tags: ["تقدير الذات", "تطوير ذاتي"],
+        href: "./services.html",
+    },
+    {
+        id: "grounding",
+        title: "لحظات للعودة إلى الحاضر",
+        description: "تمارين بسيطة للانتباه للحظة الحالية، مع تذكير بأنها لا تستبدل الرعاية المتخصصة.",
+        category: "design",
+        categoryLabel: "تمرين تأملي",
+        image: "./imgs/wellbeing-illustration.svg",
+        imageAlt: "رسم نباتي هادئ يدعو إلى التوقف والتأمل",
+        tags: ["وعي باللحظة", "تأمل"],
+        href: "./services.html",
+    },
+    {
+        id: "support-circle",
+        title: "مساحة حوار داعمة",
+        description: "لقاء جماعي منظّم للتعلّم وتبادل الخبرات ضمن حدود آمنة ومحترمة.",
+        category: "design",
+        categoryLabel: "ورشة عمل",
+        image: "./imgs/wellbeing-illustration.svg",
+        imageAlt: "رسم نباتي هادئ لمساحة حوار داعمة",
+        tags: ["تواصل داعم", "مساحة آمنة"],
+        href: "./services.html",
+    },
+    {
+        id: "calm-routine",
+        title: "روتين يومي أكثر هدوءًا",
+        description: "اقتراحات مرنة للعناية بالنفس، تُكيّف مع ظروفك بدل تحويلها إلى قائمة واجبات.",
+        category: "web",
+        categoryLabel: "دليل عملي",
+        image: "./imgs/wellbeing-illustration.svg",
+        imageAlt: "رسم نباتي هادئ يرمز إلى العناية الذاتية",
+        tags: ["عناية ذاتية", "توازن"],
+        href: "./services.html",
     },
 ];
 const services = [
     {
-        title: "تطوير المواقع",
-        description: "مواقع سريعة ومتجاوبة، مبنية بعناية لتعمل بكفاءة على مختلف الشاشات.",
-        icon: "⌘",
-        features: ["واجهات عربية RTL", "تصميم متجاوب", "بنية واضحة"],
+        title: "جلسات إرشاد واستشارة فردية",
+        description: "مساحة حوار داعمة للتأمل في التحديات الشخصية وتحديد خطوات تطوير ذاتي مناسبة.",
+        icon: "♡",
+        features: ["أهداف واضحة", "إصغاء واحترام", "توضيح الحدود مسبقًا"],
     },
     {
-        title: "تصميم تجربة المستخدم",
-        description: "واجهات مرتبة تجعل الوصول إلى المعلومة والتفاعل مع الموقع أسهل.",
+        title: "ورش لتجاوز جلد الذات والكمالية",
+        description: "ورش تثقيفية وتمارين انعكاسية تساعد على بناء علاقة أرحم مع الذات.",
         icon: "✦",
-        features: ["تصميم واجهات", "نماذج أولية", "اهتمام بالتفاصيل"],
+        features: ["أنشطة عملية", "وتيرة مرنة", "مجموعة باحترام متبادل"],
     },
     {
-        title: "المحتوى الرقمي",
-        description: "صياغة محتوى صفحاتك بنبرة واضحة ومتناسقة مع هوية مشروعك.",
-        icon: "Aa",
-        features: ["كتابة صفحات", "تنظيم المحتوى", "لغة عربية واضحة"],
+        title: "برامج لبناء تقدير الذات",
+        description: "مسارات تطوير ذاتي منظمة لبناء وعي بالاحتياجات والحدود ونقاط القوة.",
+        icon: "☼",
+        features: ["تأملات أسبوعية", "أهداف قابلة للتعديل", "موارد تثقيفية"],
     },
 ];
-const themeStorageKey = "khadija-portfolio-theme";
+const themeStorageKey = "khadija-wellbeing-theme";
 const root = document.documentElement;
 const themeToggle = getElement("#theme-toggle");
 const themeIcon = getElement("#theme-icon");
@@ -129,7 +135,7 @@ function renderTheme(theme) {
     themeIcon.innerHTML = isDark
         ? '<path stroke-linecap="round" stroke-linejoin="round" d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"/>'
         : '<circle cx="12" cy="12" r="4"/><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>';
-    getElement('meta[name="theme-color"]').content = isDark ? "#020617" : "#f8fafc";
+    getElement('meta[name="theme-color"]').content = isDark ? "#1e2921" : "#faf9f6";
 }
 function createProjectCard(project) {
     const article = document.createElement("article");
@@ -146,20 +152,27 @@ function createProjectCard(project) {
     category.textContent = project.categoryLabel;
     const title = document.createElement("h3");
     title.className = "mt-3 text-xl font-extrabold text-slate-950 dark:text-white";
-    title.textContent = project.title;
+    const titleLink = document.createElement("a");
+    titleLink.href = project.href;
+    titleLink.textContent = project.title;
+    title.append(titleLink);
     const description = document.createElement("p");
     description.className = "mt-2 min-h-14 text-sm leading-7 text-slate-600 dark:text-slate-400";
     description.textContent = project.description;
     const tags = document.createElement("ul");
     tags.className = "mt-4 flex flex-wrap gap-2";
-    tags.setAttribute("aria-label", "مهارات المشروع");
+    tags.setAttribute("aria-label", "موضوعات المحتوى");
     for (const tag of project.tags) {
         const item = document.createElement("li");
         item.className = "rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-600 dark:bg-slate-800 dark:text-slate-300";
         item.textContent = tag;
         tags.append(item);
     }
-    content.append(category, title, description, tags);
+    const readMore = document.createElement("a");
+    readMore.className = "mt-5 inline-flex font-bold text-indigo-600";
+    readMore.href = project.href;
+    readMore.textContent = project.category === "content" ? "اقرئي المزيد ←" : "اكتشفي التفاصيل ←";
+    content.append(category, title, description, tags, readMore);
     article.append(image, content);
     article.dataset.projectId = project.id;
     return article;

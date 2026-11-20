@@ -11,6 +11,8 @@ for (const file of [
   "index.html",
   "about.html",
   "projects.html",
+  "portfolio.html",
+  "article.html",
   "services.html",
   "faq.html",
   "contact.html",

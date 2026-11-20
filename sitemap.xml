@@ -2,32 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://myproject-dusky-xi.vercel.app/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://myproject-dusky-xi.vercel.app/about.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://myproject-dusky-xi.vercel.app/projects.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://myproject-dusky-xi.vercel.app/portfolio.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://myproject-dusky-xi.vercel.app/article.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myproject-dusky-xi.vercel.app/services.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://myproject-dusky-xi.vercel.app/faq.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://myproject-dusky-xi.vercel.app/contact.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
