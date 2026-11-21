@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="60" x2="860" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F2E7"/>
+      <stop offset="1" stop-color="#E4ECE2"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1000v800H0z"/>
+  <circle cx="780" cy="166" r="83" fill="#E9D8B8"/>
+  <path d="M0 619c187-55 335-46 488-7 177 45 341 42 512-13v201H0V619Z" fill="#D3DFD0"/>
+  <path d="M121 670h758" stroke="#B9C7B4" stroke-width="17" stroke-linecap="round"/>
+  <path d="M284 584h429v33H284v-33Z" fill="#B99578"/>
+  <path d="M314 617h369l-25 96H339l-25-96Z" fill="#C9AA8F"/>
+  <path d="M393 578c0-49 37-83 84-83h65c47 0 84 34 84 83H393Z" fill="#FFFCF5"/>
+  <path d="M416 576c0-34 27-60 61-60h65c34 0 61 26 61 60" stroke="#D8C8B2" stroke-width="9"/>
+  <path d="M626 548h49c31 0 51 23 51 50s-20 50-51 50h-29" stroke="#B99578" stroke-width="17" stroke-linecap="round"/>
+  <path d="M461 468c-12-29-4-54 22-73 17 26 14 51-9 75" stroke="#A8B69D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M502 471c0-36 18-59 52-70 5 34-10 59-44 74" stroke="#A8B69D" stroke-width="8" stroke-linecap="round"/>
+  <rect x="150" y="443" width="187" height="142" rx="16" fill="#FFFCF5"/>
+  <rect x="169" y="461" width="149" height="106" rx="9" fill="#E9EDE4"/>
+  <path d="M184 542c30-36 48-38 69-10 16-17 31-19 50-1" stroke="#8EA083" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="283" cy="485" r="10" fill="#D6BB98"/>
+  <rect x="176" y="599" width="137" height="13" rx="6.5" fill="#B99578"/>
+  <path d="M782 561c-7-68 4-127 46-176 16 43 15 83-4 118-10 19-24 39-42 58Z" fill="#899B80"/>
+  <path d="M781 561c-44-31-60-74-47-128 43 23 62 62 56 112" fill="#A9B79F"/>
+  <path d="M762 580h75l-9 55h-57l-9-55Z" fill="#B99578"/>
+  <path d="M755 578c0-8 6-14 14-14h61c8 0 14 6 14 14v9h-89v-9Z" fill="#C9AA8F"/>
+  <path d="M350 379c-18-27-16-54 7-80 22 25 25 52 6 80" fill="#A6B49B"/>
+  <path d="M347 397c-34-5-54-26-57-60 34 6 55 27 59 61" fill="#87997E"/>
+  <circle cx="378" cy="401" r="7" fill="#C7A881"/>
+</svg>
